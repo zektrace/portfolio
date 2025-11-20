@@ -83,6 +83,7 @@ export default function App() {
         'Modular css framework',
       tech: ['css', 'framework', 'html'],
       github: 'https://github.com/ogkae/hoopie',
+    }
   ];
 
   const experiences: Experience[] = [
