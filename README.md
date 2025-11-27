@@ -2,6 +2,8 @@
 
 # My own portfolio
 
+[`Use this template`](https://github.com/new?template_name=portfolio&template_owner=ogkae)
+
 made with _Typescript_ and _Solid_.
 [`Website`](https://watermelonicevape.vercel.app/)
 
