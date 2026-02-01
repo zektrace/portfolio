@@ -56,42 +56,26 @@ export default function App() {
       id: 'p1',
       title: 'yurei',
       description:
-        'Python toolkit for encryption, authentication, secure IDs, and lightweight storage - educational, fun, and perfect for devs and curious hackers.',
-      tech: ['python', 'encryption', 'database', 'sha256'],
-      github: 'https://github.com/ogkae/yurei',
-      link: 'https://github.com/ogkae/yurei',
+        'Lightweight cryptographic primitives for Python with zero dependencies. Password hashing, encryption, tokens, UUIDs, and secure storage for rapid prototyping and internal tools.',
+      tech: ['python', 'encryption', 'database', 'sha256', 'cryptography', 'fernet'],
+      github: 'https://github.com/zektrace/yurei',
+      link: 'https://github.com/zektrace/yurei',
     },
     {
       id: 'p2',
-      title: 'encrypted dns',
-      description: 'DNS over HTTPS config profiles for iOS & macOS',
-      tech: ['javascript', 'privacy', 'DNs'],
-      github: 'https://github.com/ogkae/encrypted-dns',
-    },
-    {
-      id: 'p3',
-      title: 'perplexity omnibox',
-      description:
-        'Type @Perplexity in browser omnibox to get results from Perplexity AI',
-      tech: ['extension', 'python', 'javascript'],
-      github: 'https://github.com/ogkae/perplexity-omnibox',
-    },
-    {
-      id: 'p4',
-      title: 'hoopie',
-      description:
-        'Modular css framework',
-      tech: ['css', 'framework', 'html'],
-      github: 'https://github.com/ogkae/hoopie',
+      title: 'payload in pixels',
+      description: 'A compact demonstration of how encrypted data can be concealed inside images using low-level bit manipulation.',
+      tech: ['python', 'encryption', 'steganography', 'images', 'lsb', 'cryptography'],
+      github: 'https://gist.github.com/zektrace/ae06b54cd45a88a4f4a4fa885506e437',
     }
   ];
 
   const experiences: Experience[] = [
     {
-      role: 'my first cybersecurity project',
+      role: 'hexahosting (Hexaʰ)',
       company: 'tech startup',
       period: '2024',
-      description: 'leading white-hat architecture and mentoring developers',
+      description: 'functional cloud hosting for bots, web pages and AI automations',
     },
     {
       role: 'frontend developer',
@@ -110,10 +94,10 @@ export default function App() {
   // fetch github stats
   const fetchGithubStats = async () => {
     try {
-      const response = await fetch('https://api.github.com/users/ogkae');
+      const response = await fetch('https://api.github.com/users/zektrace');
       const data = await response.json();
       setGithubStats({
-        repos: data.public_repos || 0,
+        repos: data.public_repos  || 0,
         followers: data.followers || 0,
         following: data.following || 0,
       });
@@ -179,7 +163,7 @@ export default function App() {
       <nav class={`navbar ${isVisible() ? 'visible' : ''}`}>
         <div class="nav-content">
           <h1 class="logo" onClick={() => scrollToSection('home')}>
-            ogkae
+            Zek
           </h1>
 
           <div class="nav-links">
@@ -211,12 +195,8 @@ export default function App() {
       <section id="home" class="hero-section fade-in-section">
         <div class="container">
           <div class={isVisible() ? 'visible' : ''}>
-            <div class="hero-status animate-fade-up delay-1">
-              <Circle size={8} class="status-dot" />
-              <span>available for work</span>
-            </div>
 
-            <h1 class="hero-title animate-fade-up delay-2">ogkae</h1>
+            <h1 class="hero-title animate-fade-up delay-2">Zek</h1>
 
             <p class="hero-subtitle animate-fade-up delay-3">
               developer & designer
@@ -224,7 +204,7 @@ export default function App() {
 
             <p class="hero-description animate-fade-up delay-4">
               creating functional digital experiences through clean code and
-              thoughtful design
+              thoughtful design.
             </p>
 
             {/* github stats */}
@@ -385,18 +365,18 @@ export default function App() {
 
             <div class="contact-links">
               <a
-                href="https://github.com/ogkae"
+                href="https://github.com/zektrace"
                 target="_blank"
                 class="contact-link"
               >
                 <Github size={20} />
-                <span>github.com/ogkae</span>
+                <span>github.com/zektrace</span>
                 <ExternalLink size={16} class="link-icon" />
               </a>
 
-              <a href="mailto:contact@ogkae.dev" class="contact-link">
+              <a href="mailto:carloslurqui@gmail.com?subject=Hey!&body=Hey!%20I%20found%20you%20on%20GitHub%20and%20wanted%20to%20reach%20out..." class="contact-link">
                 <Mail size={20} />
-                <span>contact@ogkae.dev</span>
+                <span>carloslurqui@gmail.com</span>
                 <ExternalLink size={16} class="link-icon" />
               </a>
             </div>
@@ -409,7 +389,7 @@ export default function App() {
         <div class="container">
           <div class="footer-content">
             <p>built with solid & typescript</p>
-            <p>© 2026 ogkae</p>
+            <p>© 2026 Zek</p>
           </div>
         </div>
       </footer>
