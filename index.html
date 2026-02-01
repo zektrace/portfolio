@@ -2,20 +2,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@Zek - template</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="/src/assets/favicon.ico" />
+  <meta name="description" content="{{PAGE_DESCRIPTION}}" /> <!-- shows on google -->
+  <meta name="author" content="{{PLACEHOLDER}}" />           <!-- add your username -->
+  <meta name="generator" content="Vite + SolidJS" />         <!-- tech stack -->
+  <meta name="keywords" content="{{PLACEHOLDER}}" />         <!-- add your keywords -->
 
-  <title>ogkae portfolio</title>
+  <!-- let bots cook -->
+  <meta name="robots" content="index, follow" />             
+  <meta name="googlebot" content="index, follow" />
+
+  <link rel="canonical" href="{{CANONICAL_URL}}" /> <!-- avoid seo duplicates -->
+
+  <!--
+    <meta name="theme-color" content="{{THEME_COLOR}}" /> 
+    <meta name="color-scheme" content="dark light" />   
+  -->
+
+  <!--
+  <meta property="og:title" content="{{OG_TITLE}}" />
+  <meta property="og:description" content="{{OG_DESCRIPTION}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{OG_URL}}" />
+  <meta property="og:image" content="{{OG_IMAGE_URL}}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="{{SITE_NAME}}" />
+  <meta property="og:locale" content="en_US" />
+  -->
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{TWITTER_TITLE}}" />
+  <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}" />
+  <meta name="twitter:image" content="{{TWITTER_IMAGE_URL}}" />
+  <meta name="twitter:site" content="{{TWITTER_HANDLE}}" />
+  <meta name="twitter:creator" content="{{TWITTER_HANDLE}}" />
+
+  <link rel="icon" href="/src/assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="{{APPLE_TOUCH_ICON}}" /> <!-- ios homescreen -->
+
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="{{APP_NAME}}" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' https:; style-src 'self' 'unsafe-inline'; script-src 'self'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="preload" href="./src/index.css" as="style" /> <!-- if exists -->
+
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
- 
-  <!-- solid mount point -->     <div id="root"></div>
-  <!--  vite input       -->     <script type="module" src="/src/index.tsx"></script>
-    
+  <noscript>js disabled = this app sad :(</noscript>
+
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
