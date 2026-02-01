@@ -1,12 +1,16 @@
 {
-  "name": "ogkae-portfolio",
+  "name": "zek-portfolio",
   "version": "1.3.0",
   "description": "my own portfolio made with typescript and solidjs",
+  "private": true,
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
+    "dev": "vite --port 9999",
+    "dev:host": "vite --port 9999 --host",
     "build": "vite build",
-    "serve": "vite preview"
+    "start": "vite preview --port 4173",
+    "start:host": "vite preview --port 4173 --host",
+    "clean": "rm -rf dist node_modules/.vite",
+    "rebuild": "pnpm clean && pnpm build"
   },
   "license": "MIT",
   "devDependencies": {
