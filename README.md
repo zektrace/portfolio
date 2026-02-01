@@ -6,7 +6,7 @@
 ![SolidJS](https://img.shields.io/badge/solidjs-2C4F7C?style=flat-square&logo=solid&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
-<a href="zektraceweb.vercel.app"><code>Live Demo</code></a>
+<a href="https://watermelonicevape.vercel.app/"><code>Live Demo</code></a>
 
 ---
 
